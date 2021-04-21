@@ -1,6 +1,7 @@
 function yearBalance(selector, data, month) {
     const DOM = document.querySelector(selector);
     
+    data.sort((a,b) => a.month - b.month);
     let HTML = '';
     for (let i=0; i<data.length; i++) {
         const balances = data[i];
