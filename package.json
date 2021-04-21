@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "1. Pasidaryti projekto fork'ą, kuris sukurs projekto kopiją jūsų paskiroje;",
   "main": "index.js",
-  "scripts":
-   {
-     "dev" : "live-server --port=1000",
+  "scripts": {
+    "dev": "live-server --port=1000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

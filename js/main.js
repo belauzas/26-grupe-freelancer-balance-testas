@@ -1,4 +1,9 @@
-import {months } from './data/months.js';
+import { months } from './components/months.js';
+import { balance } from './components/balance.js';
+import { account } from './data.js';
 
 
-console.log(months);
+months('.table-content', account);
+months;
+account;
+balance('.table-footer', account);
