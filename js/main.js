@@ -1,3 +1,5 @@
 import { months } from './components/months.js';
+import { yearBalance } from './components/yearBalance.js';
+import { account } from './data.js';
 
-console.log(months);
+yearBalance('.table-content', account, months);
