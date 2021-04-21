@@ -1,3 +1,7 @@
-import { months } from "./months";
+import { tableContent } from "./components/tablecontent.js";
+import { account} from "./data.js";
+import { months } from "./months.js";
 
-months
+tableContent('.table-content', account);
+account;
+months;
