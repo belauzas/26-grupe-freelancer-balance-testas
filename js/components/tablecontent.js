@@ -1,11 +1,10 @@
-
 function tableContent (selector, data) {
     const DOM = document.querySelector(selector);
     let HTML ='';
     const months = ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Geguze', 'Birzelis', 'Liepa', 'Rugpjutis', 'Rugsejis', 'Spalis', 'Lapkritis', 'Gruodis'];
 
     data.sort((a, b) => (a.month > b.month) ? 1 : -1);
-
+  
     for (let i = 0; i < data.length; i++) {
     const aData = data[i];
     
