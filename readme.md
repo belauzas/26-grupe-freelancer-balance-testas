@@ -9,10 +9,10 @@
 4. Sugeneruoti "Metų balanso" lentelės eilutes pagal pateiktą šabloną, įterpiant reikiamą informaciją; +
 
 5. "Metų balanso" lentelės apatinėje dalyje (.table-footer) surašyti atitinkamai:
-- visų metų pajamas;  
-- visų metų išlaidas; 
-- visų metų balansą;
-
+- visų metų pajamas;   +
+- visų metų išlaidas;  +
+- visų metų balansą;   +
+ 
 6. "Metų suvestinės" lentelėje įrašyti mėnesių pavadinimus atitinkamose vietose, kai:
 - buvo mažiausiai uždirbta, bet ne mažiau nulio;
 - buvo daugiausiai uždirbta;
