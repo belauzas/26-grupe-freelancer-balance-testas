@@ -15,7 +15,7 @@ function table(selector, data) {
         const row = data[i]
         row.month = config[i]
 
-        let income = row.income === undefined ? 0 : row.income
+        const income = row.income === undefined ? 0 : row.income
         const expense = row.expense === undefined ? 0 :row.expense
         const balance = income - expense;
     HTML += `
@@ -44,10 +44,31 @@ function table(selector, data) {
    const balanceDOM = document.getElementById('balance')
    balanceDOM.innerText = `${sumBalance} Eur`
 
+}
 
-    
+function metuSuvestine(selector, data) {
+    const DOM = document.querySelector(selector);
+    const config =  ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Geguze', 'Birzelis','Liepa','Rugpjutis', 'Rugsejis','Spalis', 'Lapkritis', 'Gruodis'];
+    let sortedDataByMonth = data.sort((a,b)=>a.month -b.month);
+
+    const minIncome = data.sort((a,b)=>a.income - b.income);
+    const minIncomeDOM = document.getElementById('minIncome');
+    minIncomeDOM.innerText = minIncome[0].month
+
+    const maxIncome = data.sort((a,b)=>b.income - a.income);
+    const maxIncomeDOM = document.getElementById('maxIncome');
+    maxIncomeDOM.innerText = minIncome[0].month
+
+    const minExpense = data.sort((a,b)=>a.expense - b.expense);
+    const minExpenseDOM = document.getElementById('minExpense');
+    minExpenseDOM.innerText = minExpense[0].month
+
+    const maxExpense = data.sort((a,b)=>b.expense - a.expense);
+    const maxExpenseDOM = document.getElementById('maxExpense');
+    maxExpenseDOM.innerText = maxExpense[0].month
 }
 
 
+export { metuSuvestine}
 export{ table }
 
