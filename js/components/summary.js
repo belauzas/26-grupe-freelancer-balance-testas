@@ -1,17 +1,25 @@
 function summary (selector, data){
     const DOM = document.querySelector(selector);
-    let HTML = '';
+      
+    const minInc = data.sort((a, b) => a.income - b.income);
+    const minIncDOM = document.getElementById('minIncome');
+    minIncDOM.innerText = minInc[3].month;
 
-    const months = ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Geguze', 'Birzelis', 'Liepa', 'Rugpjutis', 'Rugsejis', 'Spalis', 'Lapkritis', 'Gruodis'];
-
-    for (let i = 0; i < data.length; i++){
-        const {income} = data[i];
-        const month = months[i];
-
-        const minIncome = toString(income);
-        console.log(minIncome);
-    }
     
-}
+    const maxInc = data.sort((a, b) => b.income - a.income);
+    const maxIncDOM = document.getElementById('maxIncome');
+    maxIncDOM.innerText = maxInc[0].month;
+
+    const minExp = data.sort((a, b) => a.expense - b.expense);
+    const minExpDOM = document.getElementById('minExpense');
+    minExpDOM.innerText = minExp[2].month;
+
+    const maxExp = data.sort((a, b) => b.expense - a.expense);
+    const maxExpDOM = document.getElementById('maxExpense');
+    maxExpDOM.innerText = maxExp[0].month;
+
+   
+    }
+
 
 export { summary }

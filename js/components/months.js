@@ -3,7 +3,7 @@ function months(selector, data, months){
     let HTML = '';
     let num = 0;
     
-    data.sort((a, b) => (a.month > b.month) ? 1 : -1);
+    let sorted = data.sort((a, b) => a.month - b.month);
     for (let i = 0; i < data.length; i++){
         const row = data[i];
         row.month = months[i];
