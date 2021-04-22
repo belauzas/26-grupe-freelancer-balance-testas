@@ -1,13 +1,13 @@
-function months(selector, data){
+function months(selector, data, months){
     const DOM = document.querySelector(selector);
     let HTML = '';
-
-    const months = ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Geguze', 'Birzelis', 'Liepa', 'Rugpjutis', 'Rugsejis', 'Spalis', 'Lapkritis', 'Gruodis'];
-
-    data.sort((a, b) => (a.month > b.month) ? 1 : -1);
+    let num = 0;
+    
+    let sorted = data.sort((a, b) => a.month - b.month);
     for (let i = 0; i < data.length; i++){
         const row = data[i];
         row.month = months[i];
+        num++;
         
         if(row.income === undefined){
             row.income = 0;
@@ -19,7 +19,7 @@ function months(selector, data){
         const balance = row.income - row.expense;
 
         HTML += `<div class="table-row">
-                    <div class="cell">${i+1}</div>
+                    <div class="cell">${num}</div>
                     <div class="cell">${row.month}</div>
                     <div class="cell">${row.income}</div>
                     <div class="cell">${row.expense}</div>
