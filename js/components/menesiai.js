@@ -24,7 +24,7 @@ function month(selector, account) {
 
                 HTML += `<div class="table-row">
                             <div class="cell">${i+1}</div>
-                                 <div class="cell">${mo.month}</div>
+                                 <div class="cell">${menesiai[i]}</div>
                                  <div class="cell">${mo.income}</div>
                             <div class="cell">${mo.expense}</div>
                             <div class="cell">${balance}</div>
