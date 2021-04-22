@@ -19,7 +19,7 @@ function suma(selector, account) {
                                 <div class="cell"></div>
                                 <div class="cell">${incomeSum} Eur</div>
                                 <div class="cell">${expenseSum} Eur</div>
-                                <div class="cell">${incomeSum - expenseSum}</div>
+                                <div class="cell">${incomeSum - expenseSum} Eur</div>
                               </div>`
 
                 
