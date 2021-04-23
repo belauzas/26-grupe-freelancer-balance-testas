@@ -21,9 +21,9 @@ function months(selector, data, months){
         HTML += `<div class="table-row">
                     <div class="cell">${num}</div>
                     <div class="cell">${row.month}</div>
-                    <div class="cell">${row.income}</div>
-                    <div class="cell">${row.expense}</div>
-                    <div class="cell">${balance}</div>
+                    <div class="cell">${row.income} Eur</div>
+                    <div class="cell">${row.expense} Eur</div>
+                    <div class="cell">${balance} Eur</div>
                 </div>`
     }
     DOM.innerHTML = HTML;
