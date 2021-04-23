@@ -1,10 +1,7 @@
 function summary (selector, data){
     const DOM = document.querySelector(selector);
-
-    const sortData = data => data.sort((a, b) => a.month - b.month);
-      
+     
     const minInc = data.filter(a => a.income > 0).sort((a, b) => a.income - b.income);
-    console.log(minInc);
     const minIncDOM = document.getElementById('minIncome');
     minIncDOM.innerText = minInc[0].month;
 
