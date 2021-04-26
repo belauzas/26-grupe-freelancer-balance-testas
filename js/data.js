@@ -12,3 +12,11 @@ const account = [
     { month: 8, income: 450, expense: 120 },
     { month: 12, expense: 200 }
 ];
+//sorting from 1 to 12
+account.sort(function (a, b) {
+    return a.month - b.month;
+  });
+  
+  export { account };
+  
+
