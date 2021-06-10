@@ -4,7 +4,7 @@
 
 2. Kiekviena sekanti užduotis turi turėti atskitą commit'ą;
 
-3. Užpildyti kintamąjį, kur turi būti surašyti visų mėnesių pavadinimai;
+3. Sukurti ir užpildyti kintamąjį, kur turi būti surašyti visų mėnesių pavadinimai;
 
 4. Sugeneruoti "Metų balanso" lentelės eilutes pagal pateiktą šabloną, įterpiant reikiamą informaciją;
 
